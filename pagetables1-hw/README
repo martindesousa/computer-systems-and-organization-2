@@ -1,0 +1,31 @@
+Multi-Level Page Tables Tool - MARTIN DESOUSA
+
+*****************************************************
+CUSTOMIZING config.h:
+
+The config.h file includes definitions for parameters that determine the page table structure. 
+
+POBITS - "# of Page Offset Bits" --------------------
+
+The number of bits used for the page offset. Setting POBITS also determines the size of a page, where page size = 2^POBITS.
+
+LEVELS - "# of Levels" ------------------------------
+
+The number of levels used for the page table structure. Use more levels to more efficiently cover larger virtual address spaces.
+
+*****************************************************
+KNOWN LIMITATIONS:
+
+This implementation is not tested with values of LEVELS > 6 and POBITS < 4 or POBITS > 18.
+
+*****************************************************
+MEMORY DEALLOCATION:
+
+Memory deallocation is defined in a page_deallocate method:
+
+void page_deallocate(size_t va)
+
+This method should be used on virtual addresses that correspond to valid page table entries, otherwise the method does nothing. 
+The method simply frees the physical page that is associated with a single virtual address passed in by parameter 
+by navigating to the physical page using multilevel page table indexing, and freeing the memory associated 
+with the corresponding page table entry's physical page. 

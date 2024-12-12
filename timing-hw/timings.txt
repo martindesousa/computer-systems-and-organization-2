@@ -1,0 +1,19 @@
+1. Average time to run empty function over 100000 iterations: 0.000000000 seconds
+Overhead subtracted: 0.000000052 seconds
+(printed straight from the program other than subtracted overhead)
+
+2. Average time to run getppid over 100000 iterations: 0.000000145 seconds
+Overhead subtracted: 0.000000052 seconds
+(printed straight from the program other than subtracted overhead)
+
+3. Average time to run system("/bin/true") over 100 iterations: 0.003327844 seconds
+Overhead subtracted: 0.000000052 seconds
+(printed straight from the program other than subtracted overhead)
+
+4. Average time to send signal over 100000 iterations: 0.000001712 seconds
+Overhead subtracted: 0.000000052 seconds
+(printed straight from the program other than subtracted overhead)
+
+5. Average time to send signal to other process and receive over 10 iterations: 0.000074754 seconds
+Overhead subtracted: 0.000000052 seconds
+(10 iterations were done manually and averaged)

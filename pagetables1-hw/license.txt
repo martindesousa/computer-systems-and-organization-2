@@ -1,0 +1,10 @@
+MIT License - I chose to use the MIT license because the only requirement is that the MIT license is included in any redistributions of
+this code, which is fine for the small nature of the project.
+
+GPL License - I read the GPL license, but chose not to use it because its requirements are too strict for what is necessary
+for this project. I specifically do not need to force people who use this code to use a GPL license.
+
+3 Clause BSD License - I read the 3 Clause BSD License, and noticed the main difference between it and the MIT license is that 
+my name may not be used to endorse any derivations of this project, and I chose not to use it because I do not believe anyone 
+will use my name to endorse derivations, so the MIT will suffice and is thus preferable. 
+
